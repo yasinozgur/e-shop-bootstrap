@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="bg-light">
+    <main class="">
+      @require('../partials/header.html')
+
+      <section class="w-75 mx-auto row">
+        <div class="col-12 col-lg-9">
+          @require("../partials/Product-item.html")
+        </div>
+        <div class="col-12 col-lg-3 d-sm-none d-md-none d-lg-block">
+          @require("../partials/category.html")
+        </div>
+      </section>
+
+      @require('../partials/footer.html')
+    </main>
+  </body>
+</html>

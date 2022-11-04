@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="bg-light">
+    <main class="">
+      @require('../partials/header.html')
+
+      <section class="w-75 mx-auto row">
+        <form class="border border-secondary py-4 w-50 mx-auto">
+          <div class="mb-3">
+            <label for="email" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="remember"
+            />
+            <label class="form-check-label" for="remember"
+              >Remember Me!</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </section>
+
+      @require('../partials/footer.html')
+    </main>
+  </body>
+</html>
